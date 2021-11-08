@@ -1,0 +1,45 @@
+/*Section*/
+section {
+	margin-right: 5%;
+	margin-left: 5%;
+	margin-top: 6.1%;
+	width: 490%;
+}
+#photo a {
+	width: 30%;
+	margin: 1%;
+	border-color: black;
+	border: 1%;
+}
+
+#photo a img {
+	max-width: 100%;
+	margin-left: 5%
+
+}
+
+h2 {
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+article div:nth-child(2) {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+/*fin section*/
+
+/*responsive*/
+@media screen and (max-width: 800px) {
+	section {
+		margin-right: 5%;
+		margin-left: 5%;
+		margin-top: 10%;
+		width: 90%;
+	}
+}
+
+
+/*fin responsive*/

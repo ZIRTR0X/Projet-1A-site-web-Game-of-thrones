@@ -1,0 +1,66 @@
+
+
+#photo img  {
+	max-width: 100%;
+	height: auto;
+	text-align: center;
+}
+
+#photo a {
+	text-decoration: none;
+	color: white;
+	text-align: right;
+	font-size: 170%;
+}
+
+#imgphoto img {
+	height: auto;
+	width: 5%;
+}
+
+#imgphoto {
+	margin-top: 10%
+}
+
+
+
+figure {
+	color: white;
+	text-align: center;
+	font-size: 200%;
+	margin-top: -8%;
+}
+
+section {
+	margin-left: 5%;
+	margin-top: 6.1%;
+	margin-right: 5%;
+	width: 490%;
+}
+
+/*responsive*/
+
+@media screen and (max-width: 800px) {
+	#photo img {
+		width: 90%;
+	}
+
+	section {
+		margin-left: 5%;
+		margin-right: 5%;
+		width: 100%;
+	}
+
+	#imgphoto img {
+	height: auto;
+	width: 10%;
+	}
+
+	figure {
+	margin-top: -10%;
+	margin-right: 10%;
+	}
+
+}
+
+/*fin responsive*/

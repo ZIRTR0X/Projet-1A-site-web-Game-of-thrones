@@ -1,0 +1,31 @@
+section {
+	width: 210%;
+	text-align: center;
+	margin-left: 26%;
+	margin-right: 27%;
+	margin-top: 6.2%;
+}
+
+form {
+	font-size: 200%;
+	color: white;
+}
+#form {
+	font-size: 200%;
+	color: white;
+	margin-bottom: 5%;
+	margin-top: 3%;
+}
+
+/*responsive*/
+
+@media screen and (max-width: 800px) {
+	section {
+	width: 90%;
+	text-align: center;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 6.2%;
+	}
+}
+/*fin responsive*/

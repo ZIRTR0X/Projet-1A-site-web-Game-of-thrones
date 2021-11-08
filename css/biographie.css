@@ -1,0 +1,71 @@
+
+/*article*/
+section {
+	width: 490%;
+	height: auto;
+	margin-top: 6.1%; /*Pour être en dessous du header*/
+	border: 2px solid white;
+	background: white;
+	/*float: left;*/
+	text-align: center;
+	margin-left: 5%;
+	margin-right: 5%;
+	font-family: 'Roboto Condensed',sans-serif;
+}
+ 
+#img_tableau {
+	width: 330px;
+	height: 445px;
+}
+
+tr:first-child {
+	text-align: center;
+	font-size: 160%;
+}
+
+article div {
+	margin-bottom: 2%;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: justify;
+    min-width: 100%;
+}
+
+
+
+td, th { /* Mettre une bordure sur les td ET les th */
+    border: 1px solid black;
+}
+
+/*fin article*/
+
+/*pour imprimer*/
+ @media print {
+ 	aside{
+ 		display: none;
+ 	}
+
+ 	#reseaux_sociaux {
+ 		display: none;
+ 	}
+
+ 	header {
+ 		display: none;
+ 	}
+ }
+
+ /*fin pour imprimer*/
+
+ /*responsive*/
+@media screen and (max-width: 800px) {
+	section {
+		width: 90%;
+	}
+	#img_tableau {
+		width: 200px;
+		height: 315px;
+	}
+}
+/*fin responsive*/

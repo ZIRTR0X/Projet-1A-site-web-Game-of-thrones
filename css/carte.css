@@ -1,0 +1,29 @@
+section {
+	margin-right: 5%;
+	margin-left: 5%;
+	width: 100%;
+	margin-top: 6.1%;
+}
+
+
+h2 {
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-bottom: 5%;
+	text-align: center;
+}
+
+section img {
+	min-width: 100%;
+	max-width: 100%;
+}
+
+
+/*responsive*/
+@media screen and (max-width: 800px) {
+	section {
+		margin-right: 0%;
+		margin-left: 0%;
+	}
+}
+/*fin responsive*/

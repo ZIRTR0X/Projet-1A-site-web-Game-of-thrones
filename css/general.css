@@ -1,0 +1,298 @@
+
+/*Pour le header (texte sur image)*/
+* {
+	padding: 0;
+	margin: 0;
+
+}
+
+/*menu déroulant*/
+
+
+nav a{
+    display: block;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+nav a:hover{
+    border-bottom: 2px solid orange;
+}
+
+#menu {
+	box-shadow: 8px 1px 5px black;
+}
+
+#menu ul li ul{
+    display: none;
+}
+
+#menu ul li:hover ul {
+	display:block;
+ }
+
+#menu li ul {
+	position:absolute;
+}
+
+
+ nav ul li {
+ 	font-size: 70%; /*Je l'ai mis à 70% au lieu de 100% car je trouvé que cela render mieux espacé*/
+ }
+
+ nav ul li:not(:last-child){
+ 	border-right: 2px solid #171717; /*Je l'ai mis à la couleur du fond car cela ne render pas bien esthétiquement*/
+ }
+
+
+ nav {
+ 	margin-top: 10%;
+ 	color: #f5a623;
+	/*background-color: #171717;*/ /*avant le dégradé*/
+	background: linear-gradient(#171717, #161616); /*J'ai mis un degradé légé car cela ne render pas bien esthétiquement*/
+	font-family: "Roboto", sans-serif;
+}
+
+#menu ul li ul li {
+	/*background-color: #171717;*/
+	background: linear-gradient(#171717, #161616); /*J'ai mis un degradé légé car cela ne render pas bien esthétiquement*/
+	width: 160%;
+	font-size: 110%;
+	border-right: none; /*Pour enlever la border-right de nav ul li:not(:last-child)*/
+}
+
+#menu_bio li a {
+	font-size: 85%;
+}
+
+#menu_resume li a {
+	font-size: 78%;
+}
+
+
+#menu ul li a {
+	text-decoration: none;
+	color: #f5a623;
+}
+
+#menu ul {
+/*	display: inline-block;*/
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	width: auto;
+	height: auto;
+	font-size: 70%;
+}
+
+
+/*fin menu déroulant*/
+
+
+
+body{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	overflow-y: scroll;
+	background: #333;
+	position: relative;
+}
+
+#text_header {
+	color: white;
+	text-decoration: none;
+	text-shadow: 4px 1px 5px black;
+}
+
+
+#header_img {
+	width: 100%;
+	color: white;
+	text-decoration: none;
+}
+
+#reseaux_sociaux img {
+	height: auto;
+	width: 3%;
+	position: fixed;
+	margin-left: 97%;
+	z-index: 10;
+}
+
+#twitter {
+	/*margin-top: 100px;*/ /*avant responsive*/
+	margin-top: 7.5%;
+}
+
+#facebook {
+	/*margin-top: 140px;*/ /*avant responsive*/
+	margin-top: 10.5%;
+}
+
+#youtube {
+	/*margin-top: 180px;*/ /*avant responsive*/
+	margin-top: 13.5%;
+}
+
+#instagram {
+	/*margin-top: 220px;*/ /*avant responsive*/
+	margin-top: 16.5%;
+}
+
+.content-wrapper img {
+	width: 100%;
+}
+
+.text-wrapper {
+	width: 100%;
+	position: relative;
+	margin-top: -20%;
+}
+
+.text-wrapper {
+	text-align: center;
+	color: white;
+	font-size: 4vw;
+	font-family: 'lobster', cursive;
+}
+
+@font-face {
+   font-family: 'Game_of_Thrones';
+   src: url('Game_of_Thrones.ttf');
+}
+
+/*Fin du header*/
+
+/*Footer*/
+
+html, body {
+	height: 100%;
+}
+
+footer {
+	background-color: #191919;
+	position: relative;
+	text-align: center;
+	bottom: 0;
+	width: 100%; /*prendre la totalité de l'espace*/
+	padding-top: 3%;
+	height: 6%;
+	margin-top: 8%;
+	color: #f5a623;
+	font-family: "Roboto", sans-serif;
+}
+
+/*Fin de Footer*/
+
+
+/*aside*/
+
+.title {
+	color: #f5a623;
+	background-color: #171717;
+	font-family: "Roboto", sans-serif;
+}
+
+
+
+aside {
+	
+	background-color: #555;
+	text-align: center;
+	float: right;
+	/*height: 400px; */ /*Mis en auto car trop petit et pour l'esthétique.*/
+	height: auto;
+	/*width: 20%;*//*avant les containers*/
+	width: 100%;
+	margin-top: 6.2%;
+	border: 1px solid white;
+	font-family: 'Roboto Condensed',sans-serif;
+	border-radius: 2%;
+}
+
+aside li {
+	margin-bottom: 5%;
+}
+
+aside ul {
+	margin-top: 10%;
+}
+
+#saison li a {
+	color: white;
+	text-decoration: none;
+}
+
+#saison li a:hover {  /*quand on passe le curseur sur un lien il devient orange*/
+	color: #f5a623;
+}
+
+#saison li a:visited { /*quand on visite un lien sa couleure change en gris*/
+	color: #bdbdbd;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.padding {
+	padding: 20px;
+}
+
+/*fin aside*/
+
+/*flexbox*/
+main {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+/*fin flexbox*/
+
+/*responsive*/
+@media screen and (max-width: 800px) {
+	main {
+		display: flex;
+		flex-direction: column;
+}
+	aside {
+		margin-right: 5%;
+		margin-left: 5%;
+		width: 90%;
+	}
+	#reseaux_sociaux img {
+		display: none;
+	}
+
+
+	#reseaux_sociaux_800px img {
+		height: auto;
+		width: 50%;
+	}
+
+	#reseaux_sociaux_800px {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+		margin-top: 5%
+	}
+
+	nav ul li{
+		font-size: 130%;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	#reseaux_sociaux_800px img {
+	display: none;
+	}
+	#rs2 {
+		display: none;
+	}
+}
+
+/*fin responsive*/
